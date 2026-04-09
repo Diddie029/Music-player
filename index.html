@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Equalizer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div class="container">
+
+  <!-- EQ PANEL -->
+  <div class="panel glass">
+    <h2>Equalizer</h2>
+
+    <div id="eq">
+      <input type="range" min="-12" max="12" value="0" data-i="0">
+      <input type="range" min="-12" max="12" value="0" data-i="1">
+      <input type="range" min="-12" max="12" value="0" data-i="2">
+      <input type="range" min="-12" max="12" value="0" data-i="3">
+      <input type="range" min="-12" max="12" value="0" data-i="4">
+      <input type="range" min="-12" max="12" value="0" data-i="5">
+      <input type="range" min="-12" max="12" value="0" data-i="6">
+      <input type="range" min="-12" max="12" value="0" data-i="7">
+      <input type="range" min="-12" max="12" value="0" data-i="8">
+      <input type="range" min="-12" max="12" value="0" data-i="9">
+    </div>
+
+    <input type="file" id="fileInput" accept="audio/*">
+
+    <audio id="audio" controls></audio>
+  </div>
+
+  <!-- PLAYLIST -->
+  <div class="panel glass">
+    <h2>Playlist</h2>
+    <div class="playlist" id="playlist"></div>
+  </div>
+
+</div>
+
+<!-- FLOATING CONTROL DOCK -->
+<div class="dock glass">
+  <button id="playBtn">Play/Pause</button>
+  <button id="micBtn">Mic</button>
+  <button id="bassBtn">Bass Boost</button>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
