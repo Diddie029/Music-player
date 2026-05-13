@@ -1,4 +1,4 @@
-## Music Equalizer
+## Music Equalizer player
 
 ### A modern, feature-rich web audio equalizer and visualizer. Play, tweak, and visualize your music or microphone input with a beautiful, responsive UI.
  
